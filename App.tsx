@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
+import Hello from './src/components/Hello'
+
 const App = (): JSX.Element => {
   return (
     <View style={styles.container}>
-      <Text>This is React Native App !!hfdkasfklja</Text>
-      <StatusBar style="auto" />
+      <Hello bang={true}>World</Hello>
+      <Text>This is React Native App !!</Text>
     </View>
   )
 }
